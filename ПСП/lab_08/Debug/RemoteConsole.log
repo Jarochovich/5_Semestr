@@ -1,0 +1,14 @@
+﻿  RemoteConsole.cpp
+C:\Users\yarok\Desktop\RemoteConsole\RemoteConsole.cpp(9,2): warning C4065: оператор switch содержит метку "default", но не содержит ни одной метки "case"
+  (компиляция исходного файла "/RemoteConsole.cpp")
+  
+C:\Users\yarok\Desktop\RemoteConsole\RemoteConsole.cpp(38,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (компиляция исходного файла "/RemoteConsole.cpp")
+  
+C:\Users\yarok\Desktop\RemoteConsole\RemoteConsole.cpp(73,4): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (компиляция исходного файла "/RemoteConsole.cpp")
+  
+C:\Users\yarok\Desktop\RemoteConsole\RemoteConsole.cpp(76,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (компиляция исходного файла "/RemoteConsole.cpp")
+  
+  RemoteConsole.vcxproj -> D:\5_СЕМЕСТР\Лабы\ПСП\lab_08\Debug\RemoteConsole.exe
