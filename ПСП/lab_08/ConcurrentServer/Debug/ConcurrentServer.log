@@ -1,0 +1,71 @@
+﻿  ConcurrentServer.cpp
+C:\Users\yarok\Desktop\ConcurrentServer\Global.h(76,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (компиляция исходного файла "/ConcurrentServer.cpp")
+  
+C:\Users\yarok\Desktop\ConcurrentServer\Global.h(85,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (компиляция исходного файла "/ConcurrentServer.cpp")
+  
+C:\Users\yarok\Desktop\ConcurrentServer\DispathServer.h(49,27): warning C4018: <: несоответствие типов со знаком и без знака
+  (компиляция исходного файла "/ConcurrentServer.cpp")
+  
+C:\Users\yarok\Desktop\ConcurrentServer\DispathServer.h(67,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (компиляция исходного файла "/ConcurrentServer.cpp")
+  
+C:\Users\yarok\Desktop\ConcurrentServer\GarbageCleaner.h(40,32): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  (компиляция исходного файла "/ConcurrentServer.cpp")
+  
+C:\Users\yarok\Desktop\ConcurrentServer\GarbageCleaner.h(117,36): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  (компиляция исходного файла "/ConcurrentServer.cpp")
+  
+C:\Users\yarok\Desktop\ConcurrentServer\GarbageCleaner.h(125,36): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  (компиляция исходного файла "/ConcurrentServer.cpp")
+  
+C:\Users\yarok\Desktop\ConcurrentServer\GarbageCleaner.h(134,52): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  (компиляция исходного файла "/ConcurrentServer.cpp")
+  
+C:\Users\yarok\Desktop\ConcurrentServer\ConsolePipe.h(117,26): warning C4018: <: несоответствие типов со знаком и без знака
+  (компиляция исходного файла "/ConcurrentServer.cpp")
+  
+C:\Users\yarok\Desktop\ConcurrentServer\ConsolePipe.h(39,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (компиляция исходного файла "/ConcurrentServer.cpp")
+  
+C:\Users\yarok\Desktop\ConcurrentServer\ConsolePipe.h(40,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (компиляция исходного файла "/ConcurrentServer.cpp")
+  
+C:\Users\yarok\Desktop\ConcurrentServer\ConsolePipe.h(74,8): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (компиляция исходного файла "/ConcurrentServer.cpp")
+  
+C:\Users\yarok\Desktop\ConcurrentServer\ConsolePipe.h(78,8): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (компиляция исходного файла "/ConcurrentServer.cpp")
+  
+C:\Users\yarok\Desktop\ConcurrentServer\ConsolePipe.h(82,8): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (компиляция исходного файла "/ConcurrentServer.cpp")
+  
+C:\Users\yarok\Desktop\ConcurrentServer\ConsolePipe.h(93,8): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (компиляция исходного файла "/ConcurrentServer.cpp")
+  
+C:\Users\yarok\Desktop\ConcurrentServer\ConsolePipe.h(97,8): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (компиляция исходного файла "/ConcurrentServer.cpp")
+  
+C:\Users\yarok\Desktop\ConcurrentServer\ConsolePipe.h(101,8): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (компиляция исходного файла "/ConcurrentServer.cpp")
+  
+C:\Users\yarok\Desktop\ConcurrentServer\ConsolePipe.h(111,8): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (компиляция исходного файла "/ConcurrentServer.cpp")
+  
+C:\Users\yarok\Desktop\ConcurrentServer\ConsolePipe.h(123,10): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (компиляция исходного файла "/ConcurrentServer.cpp")
+  
+C:\Users\yarok\Desktop\ConcurrentServer\ConsolePipe.h(128,10): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (компиляция исходного файла "/ConcurrentServer.cpp")
+  
+C:\Users\yarok\Desktop\ConcurrentServer\ConsolePipe.h(134,8): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (компиляция исходного файла "/ConcurrentServer.cpp")
+  
+C:\Users\yarok\Desktop\ConcurrentServer\ResponseServer.h(72,24): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  (компиляция исходного файла "/ConcurrentServer.cpp")
+  
+C:\Users\yarok\Desktop\ConcurrentServer\ResponseServer.h(78,28): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  (компиляция исходного файла "/ConcurrentServer.cpp")
+  
+  ConcurrentServer.vcxproj -> D:\5_СЕМЕСТР\Лабы\ПСП\lab_08\Debug\ConcurrentServer.exe
