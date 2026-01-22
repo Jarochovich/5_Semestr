@@ -1,0 +1,4 @@
+﻿  ClientU.cpp
+D:\5_СЕМЕСТР\Лабы\ПСП\lab_03\ClientU\ClientU.cpp(119,56): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\5_СЕМЕСТР\Лабы\ПСП\lab_03\ClientU\ClientU.cpp(156,52): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  ClientU.vcxproj -> D:\5_СЕМЕСТР\Лабы\ПСП\lab_03\x64\Debug\ClientU.exe
