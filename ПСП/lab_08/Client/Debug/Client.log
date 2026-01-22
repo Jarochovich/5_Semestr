@@ -1,0 +1,21 @@
+﻿  stdafx.cpp
+  Client.cpp
+C:\Users\yarok\Desktop\Client\Client.cpp(73,18): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  (компиляция исходного файла "/Client.cpp")
+  
+C:\Users\yarok\Desktop\Client\Client.cpp(173,8): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  (компиляция исходного файла "/Client.cpp")
+  
+C:\Users\yarok\Desktop\Client\Client.cpp(198,8): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  (компиляция исходного файла "/Client.cpp")
+  
+C:\Users\yarok\Desktop\Client\Client.cpp(241,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (компиляция исходного файла "/Client.cpp")
+  
+C:\Users\yarok\Desktop\Client\Client.cpp(248,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (компиляция исходного файла "/Client.cpp")
+  
+C:\Users\yarok\Desktop\Client\Client.cpp(255,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (компиляция исходного файла "/Client.cpp")
+  
+  Client.vcxproj -> D:\5_СЕМЕСТР\Лабы\ПСП\lab_08\Debug\Client.exe
