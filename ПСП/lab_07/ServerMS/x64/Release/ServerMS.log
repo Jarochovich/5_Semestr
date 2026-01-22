@@ -1,0 +1,6 @@
+﻿  ServerMS.cpp
+  Создание кода
+  Previous IPDB and IOBJ mismatch, fall back to full compilation.
+  All 118 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  ServerMS.vcxproj -> D:\5_СЕМЕСТР\Лабы\ПСП\lab_07\x64\Release\ServerMS.exe
