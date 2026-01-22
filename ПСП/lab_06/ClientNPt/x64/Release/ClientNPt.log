@@ -1,0 +1,8 @@
+﻿  ClientNPt.cpp
+D:\5_СЕМЕСТР\Лабы\ПСП\Lab_06\ClientNPt\ClientNPt.cpp(90,8): warning C4101: dwWrite: неиспользованная локальная переменная
+  Создание кода
+  114 of 118 functions (96.6%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  ClientNPt.vcxproj -> D:\5_СЕМЕСТР\Лабы\ПСП\Lab_06\x64\Release\ClientNPt.exe

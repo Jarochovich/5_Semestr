@@ -1,0 +1,3 @@
+﻿  ClientNPt.cpp
+C:\Users\artzh\OneDrive\Desktop\Лабы\Курс 3\Семестр 5\ПСП\Lab_06\ClientNPt\ClientNPt.cpp(90,8): warning C4101: dwWrite: неиспользованная локальная переменная
+  ClientNPt.vcxproj -> C:\Users\artzh\OneDrive\Desktop\Лабы\Курс 3\Семестр 5\ПСП\Lab_06\x64\Debug\ClientNPt.exe
