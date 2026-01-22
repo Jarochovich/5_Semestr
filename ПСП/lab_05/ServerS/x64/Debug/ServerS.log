@@ -1,0 +1,7 @@
+﻿  ServerB.cpp
+D:\5_СЕМЕСТР\Лабы\ПСП\lab_05\ServerS\ServerB.cpp(105,47): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\5_СЕМЕСТР\Лабы\ПСП\lab_05\ServerS\ServerB.cpp(78,7): warning C4101: nameServer: неиспользованная локальная переменная
+D:\5_СЕМЕСТР\Лабы\ПСП\lab_05\ServerS\ServerB.cpp(130,47): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\5_СЕМЕСТР\Лабы\ПСП\lab_05\ServerS\ServerB.cpp(143,27): warning C4244: =: преобразование "SOCKET" в "int", возможна потеря данных
+D:\5_СЕМЕСТР\Лабы\ПСП\lab_05\ServerS\ServerB.cpp(161,56): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  ServerS.vcxproj -> D:\5_СЕМЕСТР\Лабы\ПСП\lab_05\x64\Debug\ServerB.exe
