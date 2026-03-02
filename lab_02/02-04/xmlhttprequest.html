@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>XMLHttpRequest Example</title>
+</head>
+<body>
+    <div id="fio"></div>
+
+    <script>
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', 'http://localhost:5000/api/name', true);
+        xhr.onload = () => {
+            const response = JSON.parse(xhr.responseText);
+            document.getElementById('fio').textContent =  `${response.surname} ${response.name} ${response.patronymic}`;
+        };
+        xhr.send();
+    </script>
+</body>
+</html>

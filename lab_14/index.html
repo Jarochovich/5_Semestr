@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>lab_14</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 20px;
+      max-width: 800px;
+    }
+    
+    h1 { color: #333; }
+    
+    .section {
+      margin: 20px 0;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    
+    h2 {
+      margin-top: 0;
+      color: #555;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+    
+    input {
+      margin: 8px 0;
+      padding: 8px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    button {
+      margin: 8px 0;
+      padding: 10px 15px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    
+    button:hover {
+      background-color: #45a049;
+    }
+    
+    #output {
+      background-color: #f5f5f5;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 15px;
+      margin-top: 20px;
+      min-height: 100px;
+      font-family: monospace;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+    
+    .error {
+      color: #d32f2f;
+      font-weight: bold;
+    }
+    
+    .success {
+      color: #388e3c;
+      font-weight: bold;
+    }
+    
+    .example {
+      background-color: #e8f4fd;
+      border-left: 4px solid #2196F3;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 12px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>  
+  <div class="section">
+    <h2>1. GET: Получить все кафедры</h2>
+    <p>Получает список всех кафедр из базы данных.</p>
+    <button onclick="getPulpits()">Выполнить GET запрос</button>
+    <div class="example">
+      Запрос: GET http://localhost:3000/api/pulpits
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2>2. POST: Добавить новую кафедру</h2>
+    <p>Добавляет новую кафедру в базу данных. Укажите обязательные поля:</p>
+    <input type="text" id="post_pulpit" placeholder="Код кафедры (например: ПРИМЕР)">
+    <input type="text" id="post_pulpit_name" placeholder="Название кафедры">
+    <input type="text" id="post_faculty" placeholder="Код факультета (например: ИТ)">
+    <button onclick="addPulpit()">Добавить кафедру</button>
+    <div class="example">
+      Пример JSON для POST:<br>
+      {<br>
+      &nbsp;&nbsp;"PULPIT": "ПРИМЕР",<br>
+      &nbsp;&nbsp;"PULPIT_NAME": "Примерная кафедра",<br>
+      &nbsp;&nbsp;"FACULTY": "ИТ"<br>
+      }
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2>3. PUT: Обновить информацию о кафедре</h2>
+    <p>Обновляет информацию о существующей кафедре.</p>
+    <input type="text" id="put_pulpit" placeholder="Код кафедры для обновления">
+    <input type="text" id="put_pulpit_name" placeholder="Новое название кафедры (не обязательно)">
+    <input type="text" id="put_faculty" placeholder="Новый код факультета (не обязательно)">
+    <button onclick="updatePulpit()">Обновить кафедру</button>
+    <div class="example">
+      Пример JSON для PUT:<br>
+      {<br>
+      &nbsp;&nbsp;"PULPIT": "ПРИМЕР",<br>
+      &nbsp;&nbsp;"PULPIT_NAME": "Обновленное название",<br>
+      &nbsp;&nbsp;"FACULTY": "ЛХФ"<br>
+      }
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2>4. DELETE: Удалить кафедру</h2>
+    <p>Удаляет кафедру по её коду.</p>
+    <input type="text" id="delete_pulpit" placeholder="Код кафедры для удаления">
+    <button onclick="deletePulpit()">Удалить кафедру</button>
+    <div class="example">
+      Запрос: DELETE http://localhost:3000/api/pulpits/ПРИМЕР
+    </div>
+  </div>
+  
+  <h2>Результат выполнения запроса:</h2>
+  <div id="output">Здесь будет отображаться результат...</div>
+
+<script>
+  const output = document.getElementById('output');
+
+  async function getPulpits() {
+    try {
+      output.innerHTML = 'Загрузка...';
+      output.className = '';
+      
+      const response = await fetch('/api/pulpits');
+      const data = await response.json();
+      
+      output.innerHTML = JSON.stringify(data, null, 2);
+      output.className = 'success';
+    } catch (error) {
+      output.innerHTML = 'Ошибка: ' + error.message;
+      output.className = 'error';
+    }
+  }
+
+  async function addPulpit() {
+    const pulpit = document.getElementById('post_pulpit').value;
+    const pulpitName = document.getElementById('post_pulpit_name').value;
+    const faculty = document.getElementById('post_faculty').value;
+    
+    if (!pulpit || !pulpitName || !faculty) {
+      output.innerHTML = 'Ошибка: Все поля обязательны для заполнения';
+      output.className = 'error';
+      return;
+    }
+    
+    const data = {
+      PULPIT: pulpit,
+      PULPIT_NAME: pulpitName,
+      FACULTY: faculty
+    };
+    
+    try {
+      output.innerHTML = 'Отправка запроса...';
+      output.className = '';
+      
+      const response = await fetch('/api/pulpits', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+      
+      const result = await response.json();
+      
+      if (response.status === 201) {
+        output.innerHTML = 'Кафедра успешно добавлена:\n' + JSON.stringify(result, null, 2);
+        output.className = 'success';
+        
+        // Очищаем поля ввода
+        document.getElementById('post_pulpit').value = '';
+        document.getElementById('post_pulpit_name').value = '';
+        document.getElementById('post_faculty').value = '';
+      } else {
+        output.innerHTML = 'Ошибка: ' + (result.error || 'Неизвестная ошибка');
+        output.className = 'error';
+      }
+    } catch (error) {
+      output.innerHTML = 'Ошибка: ' + error.message;
+      output.className = 'error';
+    }
+  }
+
+  async function updatePulpit() {
+    const pulpit = document.getElementById('put_pulpit').value;
+    const pulpitName = document.getElementById('put_pulpit_name').value;
+    const faculty = document.getElementById('put_faculty').value;
+    
+    if (!pulpit) {
+      output.innerHTML = 'Ошибка: Укажите код кафедры для обновления';
+      output.className = 'error';
+      return;
+    }
+    
+    if (!pulpitName && !faculty) {
+      output.innerHTML = 'Ошибка: Укажите хотя бы одно поле для обновления';
+      output.className = 'error';
+      return;
+    }
+    
+    const data = {
+      PULPIT: pulpit
+    };
+    
+    if (pulpitName) data.PULPIT_NAME = pulpitName;
+    if (faculty) data.FACULTY = faculty;
+    
+    try {
+      output.innerHTML = 'Отправка запроса...';
+      output.className = '';
+      
+      const response = await fetch('/api/pulpits', {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+      
+      const result = await response.json();
+      
+      if (response.status === 200) {
+        output.innerHTML = 'Кафедра успешно обновлена:\n' + JSON.stringify(result, null, 2);
+        output.className = 'success';
+        
+        // Очищаем поля ввода
+        document.getElementById('put_pulpit').value = '';
+        document.getElementById('put_pulpit_name').value = '';
+        document.getElementById('put_faculty').value = '';
+      } else if (response.status === 404) {
+        output.innerHTML = 'Ошибка: Кафедра не найдена';
+        output.className = 'error';
+      } else {
+        output.innerHTML = 'Ошибка: ' + (result.error || 'Неизвестная ошибка');
+        output.className = 'error';
+      }
+    } catch (error) {
+      output.innerHTML = 'Ошибка: ' + error.message;
+      output.className = 'error';
+    }
+  }
+
+  async function deletePulpit() {
+    const pulpit = document.getElementById('delete_pulpit').value;
+    
+    if (!pulpit) {
+      output.innerHTML = 'Ошибка: Укажите код кафедры для удаления';
+      output.className = 'error';
+      return;
+    }
+    
+    try {
+      output.innerHTML = 'Отправка запроса...';
+      output.className = '';
+      
+      const response = await fetch(`/api/pulpits/${pulpit}`, {
+        method: 'DELETE'
+      });
+      
+      const result = await response.json();
+      
+      if (response.status === 200) {
+        output.innerHTML = 'Кафедра успешно удалена:\n' + JSON.stringify(result, null, 2);
+        output.className = 'success';
+        
+        // Очищаем поле ввода
+        document.getElementById('delete_pulpit').value = '';
+      } else if (response.status === 404) {
+        output.innerHTML = 'Ошибка: Кафедра не найдена';
+        output.className = 'error';
+      } else {
+        output.innerHTML = 'Ошибка: ' + (result.error || 'Неизвестная ошибка');
+        output.className = 'error';
+      }
+    } catch (error) {
+      output.innerHTML = 'Ошибка: ' + error.message;
+      output.className = 'error';
+    }
+  }
+
+
+</script>
+</body>
+</html>

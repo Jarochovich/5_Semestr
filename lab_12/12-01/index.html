@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Уведомления сервера:</h1>
+<pre id="log"></pre>
+
+<script>
+let log = document.getElementById("log");
+
+const ev = new EventSource("http://localhost:3000/subscribe");
+
+ev.onmessage = e => {
+    log.textContent += e.data + "\n";
+};
+</script>
+
+</body>
+</html>

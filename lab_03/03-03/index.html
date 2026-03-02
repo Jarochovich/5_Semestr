@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03-03</title>
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+
+        result.innerHTML = '';
+        let n = 0;
+        const d  = Date.now();
+
+        for (let k = 0; k <= 20; k++) {
+            fetch(`http://localhost:5000/fact?k=${k}`, {
+                method: 'GET',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json'}
+            })
+            .then(response => response.json())
+            .then(pdata => {
+                result.innerHTML += `${n++}.Результат: ${Date.now() - d}-${pdata.k}/${pdata.fact}</br>`;
+            });   
+        }
+    </script>
+</body>
+</html>

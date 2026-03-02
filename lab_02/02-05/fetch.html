@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fetch Example</title>
+</head>
+<body>
+    <div id="fio"></div>
+
+    <script>
+        fetch('http://localhost:3000/api/name')
+        .then(response => response.text())
+        .then(data => {document.getElementById('fio').innerHTML = data})
+        .catch(err => {document.getElementById('fio').innerHTML = 'Not found'});
+    </script>
+</body>
+</html>

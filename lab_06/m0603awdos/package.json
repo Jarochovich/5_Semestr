@@ -1,0 +1,12 @@
+{
+  "name": "m0603yarok",
+  "version": "6.0.0",
+  "description": "Демонстрация npm пакета m0603",
+  "main": "m0603awdos.js",
+  "license": "MIT",
+  "author": "Yarok",
+  "dependencies": {
+    "m0603": "^1.0.0",
+    "nodemailer": "^7.0.9"
+  }
+}

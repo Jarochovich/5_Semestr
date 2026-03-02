@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-01</title>
+</head>
+<body>
+    <h1>10-01</h1>
+    <button onclick="startWebSocket()">startWS</button>
+    <div id="output"></div>
+</body>
+
+<script>
+        let ws = null;
+        let messageCount = 0;
+        let sendInterval = null;
+        let stopTimeout = null;
+        const output = document.getElementById('output');
+
+        function startWebSocket() {
+            if (ws && ws.readyState === WebSocket.OPEN) {
+                addMessage('WebSocket соединение уже активно!');
+                return;
+            }
+
+            messageCount = 0;
+
+            ws = new WebSocket('ws://localhost:4000');
+            
+            ws.onopen = function(event) {
+                addMessage('WebSocket соединение установлено');
+                
+                // Отправка сообщения каждые 3 секунды
+                sendInterval = setInterval(() => {
+                    if (ws.readyState === WebSocket.OPEN) {
+                        messageCount++;
+                        const message = `10-01-client: ${messageCount}`;
+                        ws.send(message);
+                        addMessage(`Отправлено: ${message}`);
+                    }
+                }, 3000);
+                
+                stopTimeout = setTimeout(() => {
+                    stopWebSocket();
+                }, 25000);
+            };
+            
+            ws.onmessage = function(event) {
+                console.log(`Получено от сервера: ${event.data}`);
+                addMessage(`Получено: ${event.data}`);
+            };
+            
+            ws.onclose = function(event) {
+                addMessage('WebSocket соединение закрыто');
+                cleanup();
+            };
+            
+            ws.onerror = function(error) {
+                addMessage(`WebSocket ошибка: ${error}`);
+                cleanup();
+            };
+        }
+
+        function stopWebSocket() {
+            if (ws) {
+                ws.close();
+            }
+            cleanup();
+        }
+
+        function cleanup() {
+            if (sendInterval) {
+                clearInterval(sendInterval);
+                sendInterval = null;
+            }
+            if (stopTimeout) {
+                clearTimeout(stopTimeout);
+                stopTimeout = null;
+            }
+        }
+
+        function addMessage(text) {
+            const messageDiv = document.createElement('div');
+            messageDiv.textContent = `[${new Date().toLocaleTimeString()}] ${text}`;
+            output.appendChild(messageDiv);
+        }
+</script>
+</html>

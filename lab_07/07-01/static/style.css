@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 40px;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+}
+
+video {
+    display: block;
+    margin: 20px auto;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#json-data, #xml-data {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 15px auto;
+    width: 80%;
+    border-radius: 8px;
+    font-family: monospace;
+    white-space: pre-wrap;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+</head>
+<body>
+    <h1>Тестовая форма</h1>
+    <form action="/formparameter" method="POST">
+        <p>Текст: <input type="text" name="textfield"></p>
+        <p>Число: <input type="number" name="numberfield"></p>
+        <p>Дата: <input type="date" name="datefield"></p>
+        <p>Чекбокс: <input type="checkbox" name="checkboxfield" value="checked"></p>
+        <p>Радио кнопки:</p>
+        <input type="radio" name="radiofield" value="option1"> Опция 1
+        <input type="radio" name="radiofield" value="option2"> Опция 2
+        <p>Текстовая область:</p>
+        <textarea name="textareafield"></textarea>
+        
+        <p>Кнопки отправки:</p>
+        <input type="submit" name="submit" value="Сохранить">
+        <input type="submit" name="submit" value="Отправить">
+    </form>
+</body>
+</html>

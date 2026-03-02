@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>04-02</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Задание 2</h2>
+
+    <!-- GET -->
+    <div class="card">
+      <h3>Получить все данные</h3>
+      <div class="form-group">
+        <button onclick="getData()">GET</button>
+      </div>
+    </div>
+
+    <!-- POST -->
+    <div class="card">
+      <h3>Добавить нового пользователя</h3>
+      <div class="form-group">
+        <input id="name" placeholder="Имя">
+        <input id="bday" type="date" max="">
+        <button onclick="postData()">POST</button>
+      </div>
+    </div>
+
+    <!-- PUT -->
+    <div class="card">
+      <h3>Обновить пользователя</h3>
+      <div class="form-group">
+        <input id="updId" type="number" placeholder="ID для обновления">
+        <button onclick="loadUserData()">Загрузить данные</button>
+      </div>
+      <div class="form-group">
+        <input id="newName" placeholder="Новое имя">
+        <input id="newBday" type="date" max="">
+        <button onclick="updateData()">PUT</button>
+      </div>
+    </div>
+
+    <!-- DELETE -->
+    <div class="card">
+      <h3>Удалить пользователя</h3>
+      <div class="form-group">
+        <input id="delId" type="number" placeholder="ID для удаления">
+        <button onclick="deleteData()">DELETE</button>
+      </div>
+    </div>
+
+    <h3>Результат:</h3>
+    <pre id="output"></pre>
+  </div>
+
+  <script>
+    const output = document.getElementById('output');
+    
+    const todayStr = new Date().toISOString().slice(0, 10);
+    document.getElementById('bday').max = todayStr;
+    document.getElementById('newBday').max = todayStr;
+
+    async function getData() {
+      try {
+        const res = await fetch('/api/data');
+        const json = await res.json();
+        output.textContent = JSON.stringify(json, null, 2);
+      } catch (error) {
+        output.textContent = 'Ошибка: ' + error.message;
+      }
+    }
+
+    async function postData() {
+      const name = document.getElementById('name').value.trim();
+      const bday = document.getElementById('bday').value;
+      if (!name || !bday) { alert('Введите имя и дату рождения'); return; }
+
+      try {
+        const res = await fetch('/api/data', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, bday })
+        });
+
+        const json = await res.json();
+        output.textContent = JSON.stringify(json, null, 2);
+
+        document.getElementById('name').value = '';
+        document.getElementById('bday').value = '';
+      } catch (error) {
+        output.textContent = 'Ошибка: ' + error.message;
+      }
+    }
+   
+    async function loadUserData() {
+      const id = document.getElementById('updId').value;
+      if (!id) { alert('Введите ID'); return; }
+
+      try {
+        const res = await fetch('/api/data');
+        const allUsers = await res.json();
+        const user = allUsers.find(u => u.id === parseInt(id));
+
+        if (user) {
+          document.getElementById('newName').value = user.name;
+          document.getElementById('newBday').value = user.bday;
+          output.textContent = JSON.stringify(user, null, 2);
+        } else {
+          output.textContent = `Пользователь с ID ${id} не найден`;
+        }
+      } catch (error) {
+        output.textContent = 'Ошибка при загрузке данных: ' + error.message;
+      }
+    }
+
+    async function updateData() {
+      const id = document.getElementById('updId').value;
+      const name = document.getElementById('newName').value.trim();
+      const bday = document.getElementById('newBday').value;
+
+      if (!id) { alert('Введите ID'); return; }
+      const body = {};
+      if (name) body.name = name;
+      if (bday) body.bday = bday;
+      if (Object.keys(body).length === 0) { alert('Введите новое имя или дату рождения'); return; }
+
+      try {
+        const res = await fetch(`/api/data/${id}`, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body)
+        });
+
+        const json = await res.json();
+        output.textContent = JSON.stringify(json, null, 2);
+        
+        if (res.ok) {
+          document.getElementById('updId').value = '';
+          document.getElementById('newName').value = '';
+          document.getElementById('newBday').value = '';
+        }
+      } catch (error) {
+        output.textContent = 'Ошибка: ' + error.message;
+      }
+    }
+
+    async function deleteData() {
+      const id = document.getElementById('delId').value;
+      if (!id) { alert('Введите ID'); return; }
+
+      try {
+        const res = await fetch(`/api/data/${id}`, { 
+          method: 'DELETE' 
+        });
+        const json = await res.json();
+        output.textContent = JSON.stringify(json, null, 2);
+        if (res.ok) {
+          document.getElementById('delId').value = '';
+        }
+      } catch (error) {
+        output.textContent = 'Ошибка: ' + error.message;
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f2f5;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 750px;
+      width: 100%;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background: #fafafa;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    input {
+      flex: 1;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #4CAF50;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+      white-space: nowrap;
+    }
+
+    button:hover {
+      background: #45a049;
+    }
+
+    button:active {
+      transform: scale(0.98);
+    }
+
+    pre {
+      background: #f3f3f3;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      max-height: 300px;
+    }
+  </style>
+</body>
+</html>
