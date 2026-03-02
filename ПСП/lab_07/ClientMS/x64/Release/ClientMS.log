@@ -1,0 +1,10 @@
+﻿  ClientMS.cpp
+D:\5_СЕМЕСТР\Лабы\ПСП\lab_07\ClientMS\ClientMS.cpp(98,18): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\5_СЕМЕСТР\Лабы\ПСП\lab_07\ClientMS\ClientMS.cpp(101,59): warning C4267: аргумент: преобразование из "size_t" в "DWORD"; возможна потеря данных
+D:\5_СЕМЕСТР\Лабы\ПСП\lab_07\ClientMS\ClientMS.cpp(112,63): warning C4267: аргумент: преобразование из "size_t" в "DWORD"; возможна потеря данных
+  Создание кода
+  22 of 115 functions (19.1%) were compiled, the rest were copied from previous compilation.
+    14 functions were new in current compilation
+    22 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  ClientMS.vcxproj -> D:\5_СЕМЕСТР\Лабы\ПСП\lab_07\x64\Release\ClientMS.exe

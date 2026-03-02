@@ -1,0 +1,5 @@
+﻿  ServerB.cpp
+D:\5_СЕМЕСТР\Лабы\ПСП\lab_04\ServerB\ServerB.cpp(80,37): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\5_СЕМЕСТР\Лабы\ПСП\lab_04\ServerB\ServerB.cpp(113,37): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\5_СЕМЕСТР\Лабы\ПСП\lab_04\ServerB\ServerB.cpp(123,6): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  ServerB.vcxproj -> D:\5_СЕМЕСТР\Лабы\ПСП\lab_04\x64\Debug\ServerB.exe
