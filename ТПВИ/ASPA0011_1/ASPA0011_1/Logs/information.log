@@ -1,0 +1,103 @@
+3 2025-11-26 19:17:08 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5096
+7 2025-11-26 19:17:08 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+11 2025-11-26 19:17:08 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+15 2025-11-26 19:17:08 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\5_СЕМЕСТР\Лабы\ТПВИ\ASPA0011_1\ASPA0011_1
+19 2025-11-26 19:17:50 [Information] ASPA0011_1.Services.ChannelService: Создан канал JSON-3 (ffac29dc-8483-4fe0-928f-1a64173501c2)
+23 2025-11-26 19:17:50 [Information] ASPA0011_1.Controllers.ChannelsController: Создан канал JSON-3 в состоянии CLOSED
+27 2025-11-26 19:17:57 [Information] ASPA0011_1.Services.ChannelService: Создан канал JSON-4 (7756c667-db4a-49b1-99cd-cc8ae4555c80)
+31 2025-11-26 19:17:57 [Information] ASPA0011_1.Controllers.ChannelsController: Создан канал JSON-4 в состоянии CLOSED
+3 2025-11-27 08:25:01 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5096
+8 2025-11-27 08:25:01 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+13 2025-11-27 08:25:01 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+18 2025-11-27 08:25:01 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\5_СЕМЕСТР\Лабы\ТПВИ\ASPA0011_1\ASPA0011_1
+3 2025-11-27 08:26:36 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5096
+8 2025-11-27 08:26:36 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+13 2025-11-27 08:26:36 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+18 2025-11-27 08:26:36 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\5_СЕМЕСТР\Лабы\ТПВИ\ASPA0011_1\ASPA0011_1
+23 2025-11-27 08:26:57 [Information] ASPA0011_1.Controllers.ChannelsController: Удалены каналы со состоянием CLOSED (0)
+28 2025-11-27 08:26:57 [Warning] ASPA0011_1.Controllers.ChannelsController: Каналы для удаления не найдены (state=CLOSED)
+2025-11-27 08:35:23 [Information] System: Инициализация системы логирования
+2025-11-27 08:35:49 [Information] System: Инициализация системы логирования
+1 2025-11-27 08:35:49 [Information] Program: Приложение успешно запущено в среде: Development
+2 2025-11-27 08:35:50 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5096
+3 2025-11-27 08:35:50 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+4 2025-11-27 08:35:50 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+5 2025-11-27 08:35:50 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\5_СЕМЕСТР\Лабы\ТПВИ\ASPA0011_1\ASPA0011_1
+6 2025-11-27 08:36:30 [Information] ASPA0011_1.Controllers.ChannelsController: Удалены каналы со состоянием CLOSED (0)
+9 2025-11-27 08:42:14 [Information] ASPA0011_1.Services.ChannelService: Создан канал JSON-4 (f81e0bba-6347-4e8e-812d-87f8099ad3ea)
+10 2025-11-27 08:42:14 [Information] ASPA0011_1.Controllers.ChannelsController: Создан канал JSON-4 в состоянии CLOSED
+2025-11-27 08:44:05 [Information] System: Инициализация системы логирования
+1 2025-11-27 08:44:05 [Information] Program: Приложение успешно запущено в среде: Development
+2 2025-11-27 08:44:05 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5096
+3 2025-11-27 08:44:05 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+4 2025-11-27 08:44:05 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+5 2025-11-27 08:44:05 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\5_СЕМЕСТР\Лабы\ТПВИ\ASPA0011_1\ASPA0011_1
+6 2025-11-27 08:44:17 [Information] ASPA0011_1.Controllers.ChannelsController: Удалены каналы со состоянием CLOSED (0)
+2025-11-27 08:52:33 [Information] System: Инициализация системы логирования
+1 2025-11-27 08:52:33 [Information] Program: Приложение успешно запущено в среде: Development
+2 2025-11-27 08:52:33 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5096
+3 2025-11-27 08:52:33 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+4 2025-11-27 08:52:33 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+5 2025-11-27 08:52:33 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\5_СЕМЕСТР\Лабы\ТПВИ\ASPA0011_1\ASPA0011_1
+6 2025-11-27 08:52:40 [Information] ASPA0011_1.Controllers.ChannelsController: Удалены каналы со состоянием CLOSED (0)
+2025-11-27 09:00:23 [Information] System: Инициализация системы логирования
+1 2025-11-27 09:00:23 [Information] Program: Приложение успешно запущено в среде: Development
+2 2025-11-27 09:00:23 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5096
+3 2025-11-27 09:00:23 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+4 2025-11-27 09:00:23 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+5 2025-11-27 09:00:23 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\5_СЕМЕСТР\Лабы\ТПВИ\ASPA0011_1\ASPA0011_1
+6 2025-11-27 09:00:36 [Information] ASPA0011_1.Controllers.ChannelsController: Удалены каналы со состоянием CLOSED (0)
+8 2025-11-27 09:01:29 [Information] ASPA0011_1.Services.ChannelService: Создан канал JSON-1 (3610c6a4-118e-4338-9449-a6ab89a82c94)
+9 2025-11-27 09:01:29 [Information] ASPA0011_1.Controllers.ChannelsController: Создан канал JSON-1 в состоянии CLOSED
+10 2025-11-27 09:01:43 [Information] ASPA0011_1.Services.ChannelService: Создан канал JSON-2 (111cef5f-8ac4-4c18-a02a-27f483307331)
+11 2025-11-27 09:01:43 [Information] ASPA0011_1.Controllers.ChannelsController: Создан канал JSON-2 в состоянии ACTIVE
+12 2025-11-27 09:02:22 [Information] ASPA0011_1.Controllers.ChannelsController: Канал 3610c6a4-118e-4338-9449-a6ab89a82c94 возобновлён
+13 2025-11-27 09:02:49 [Information] ASPA0011_1.Services.ChannelService: Создан канал JSON-3 (38520b9e-c679-458f-aa56-dc673198b98e)
+14 2025-11-27 09:02:49 [Information] ASPA0011_1.Controllers.ChannelsController: Создан канал JSON-3 в состоянии CLOSED
+15 2025-11-27 09:03:12 [Information] ASPA0011_1.Controllers.ChannelsController: Все каналы возобновлены
+16 2025-11-27 09:03:36 [Information] ASPA0011_1.Controllers.ChannelsController: Канал 3610c6a4-118e-4338-9449-a6ab89a82c94 остановлен. Причина: Захотел
+17 2025-11-27 09:03:50 [Information] ASPA0011_1.Controllers.ChannelsController: Удалены каналы со состоянием CLOSED (1)
+18 2025-11-27 09:04:10 [Information] ASPA0011_1.Controllers.ChannelsController: Канал 111cef5f-8ac4-4c18-a02a-27f483307331 остановлен. Причина: Захотел
+2025-11-27 09:08:30 [Information] System: Инициализация системы логирования
+2025-11-27 09:18:20 [Information] System: Инициализация системы логирования
+2025-11-27 09:18:33 [Information] System: Инициализация системы логирования
+1 2025-11-27 09:18:34 [Information] Program: Приложение успешно запущено в среде: Development
+2 2025-11-27 09:18:34 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5096
+3 2025-11-27 09:18:34 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+4 2025-11-27 09:18:34 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+5 2025-11-27 09:18:34 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\5_СЕМЕСТР\Лабы\ТПВИ\ASPA0011_1\ASPA0011_1
+2025-11-27 09:19:17 [Information] System: Инициализация системы логирования
+1 2025-11-27 09:19:17 [Information] Program: Приложение успешно запущено в среде: Development
+2 2025-11-27 09:19:18 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5096
+3 2025-11-27 09:19:18 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+4 2025-11-27 09:19:18 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+5 2025-11-27 09:19:18 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\5_СЕМЕСТР\Лабы\ТПВИ\ASPA0011_1\ASPA0011_1
+6 2025-11-27 09:19:23 [Information] ASPA0011_1.Services.ChannelService: Создан канал JSON-3 (4959836f-6a05-4113-af7a-3fc4753eb824)
+7 2025-11-27 09:19:23 [Information] ASPA0011_1.Controllers.ChannelsController: Создан канал JSON-3 в состоянии CLOSED
+8 2025-11-27 09:19:40 [Information] ASPA0011_1.Services.ChannelService: Создан канал JSON-4 (1f104bc1-84d8-46e7-866a-bf38492300cf)
+9 2025-11-27 09:19:40 [Information] ASPA0011_1.Controllers.ChannelsController: Создан канал JSON-4 в состоянии ACTIVE
+2025-11-27 09:23:06 [Information] System: Инициализация системы логирования
+2025-11-27 09:23:59 [Information] System: Инициализация системы логирования
+2025-12-10 15:38:43 [Information] System: Инициализация системы логирования
+2025-12-10 15:41:53 [Information] System: Инициализация системы логирования
+3 2025-12-10 15:45:47 [Information] ASPA0011_1.Program: Приложение успешно запущено в среде: Development
+6 2025-12-10 15:45:47 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5096
+9 2025-12-10 15:45:47 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+12 2025-12-10 15:45:47 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+15 2025-12-10 15:45:47 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\5_СЕМЕСТР\Лабы\ТПВИ\ASPA0011_1\ASPA0011_1
+28 2025-12-10 15:48:02 [Information] ASPA0011_1.Services.ChannelService: Создан канал JSON-4 (38b5e9b8-37db-47c5-85a6-9f643c96bc41)
+31 2025-12-10 15:48:02 [Information] ASPA0011_1.Controllers.ChannelsController: Создан канал JSON-4 в состоянии ACTIVE
+35 2025-12-10 15:48:44 [Information] ASPA0011_1.Controllers.ChannelsController: Удалены каналы со состоянием CLOSED (0)
+38 2025-12-10 15:48:44 [Warning] ASPA0011_1.Controllers.ChannelsController: Каналы для удаления не найдены (state=CLOSED)
+42 2025-12-10 15:49:16 [Information] ASPA0011_1.Controllers.ChannelsController: Все каналы остановлены. Причина: Потому что захотел
+45 2025-12-10 15:49:48 [Information] ASPA0011_1.Controllers.ChannelsController: Все каналы возобновлены
+1 2025-12-10 23:56:37 [Information] ASPA0011_1.Program: Приложение успешно запущено в среде: Development
+2 2025-12-10 23:56:37 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5096
+3 2025-12-10 23:56:37 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+4 2025-12-10 23:56:37 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+5 2025-12-10 23:56:37 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\5_СЕМЕСТР\Лабы\ТПВИ\ASPA0011_1\ASPA0011_1
+1 2025-12-11 08:06:26 [Information] ASPA0011_1.Program: Приложение успешно запущено в среде: Development
+2 2025-12-11 08:06:26 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5096
+3 2025-12-11 08:06:26 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+4 2025-12-11 08:06:26 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+5 2025-12-11 08:06:26 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\5_СЕМЕСТР\Лабы\ТПВИ\ASPA0011_1\ASPA0011_1

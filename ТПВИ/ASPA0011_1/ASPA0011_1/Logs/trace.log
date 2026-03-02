@@ -1,0 +1,51 @@
+1 2025-11-26 19:17:08 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5096
+5 2025-11-26 19:17:08 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+9 2025-11-26 19:17:08 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+13 2025-11-26 19:17:08 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\5_СЕМЕСТР\Лабы\ТПВИ\ASPA0011_1\ASPA0011_1
+17 2025-11-26 19:17:50 [Information] ASPA0011_1.Services.ChannelService: Создан канал JSON-3 (ffac29dc-8483-4fe0-928f-1a64173501c2)
+21 2025-11-26 19:17:50 [Information] ASPA0011_1.Controllers.ChannelsController: Создан канал JSON-3 в состоянии CLOSED
+25 2025-11-26 19:17:57 [Information] ASPA0011_1.Services.ChannelService: Создан канал JSON-4 (7756c667-db4a-49b1-99cd-cc8ae4555c80)
+29 2025-11-26 19:17:57 [Information] ASPA0011_1.Controllers.ChannelsController: Создан канал JSON-4 в состоянии CLOSED
+1 2025-11-27 08:25:01 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5096
+6 2025-11-27 08:25:01 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+11 2025-11-27 08:25:01 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+16 2025-11-27 08:25:01 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\5_СЕМЕСТР\Лабы\ТПВИ\ASPA0011_1\ASPA0011_1
+1 2025-11-27 08:26:36 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5096
+6 2025-11-27 08:26:36 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+11 2025-11-27 08:26:36 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+16 2025-11-27 08:26:36 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\5_СЕМЕСТР\Лабы\ТПВИ\ASPA0011_1\ASPA0011_1
+21 2025-11-27 08:26:57 [Information] ASPA0011_1.Controllers.ChannelsController: Удалены каналы со состоянием CLOSED (0)
+26 2025-11-27 08:26:57 [Warning] ASPA0011_1.Controllers.ChannelsController: Каналы для удаления не найдены (state=CLOSED)
+1 2025-12-10 15:45:47 [Information] ASPA0011_1.Program: Приложение успешно запущено в среде: Development
+4 2025-12-10 15:45:47 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5096
+7 2025-12-10 15:45:47 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+10 2025-12-10 15:45:47 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+13 2025-12-10 15:45:47 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\5_СЕМЕСТР\Лабы\ТПВИ\ASPA0011_1\ASPA0011_1
+16 2025-12-10 15:46:22 [Trace] ASPA0011_1.Controllers.ChannelsController: Начало обработки GET /api/channels
+17 2025-12-10 15:46:22 [Debug] ASPA0011_1.Controllers.ChannelsController: Получено каналов: 0
+19 2025-12-10 15:46:22 [Trace] ASPA0011_1.Controllers.ChannelsController: Завершение GET /api/channels
+20 2025-12-10 15:48:02 [Trace] ASPA0011_1.Controllers.ChannelsController: Начало обработки POST /api/channels
+21 2025-12-10 15:48:02 [Debug] ASPA0011_1.Controllers.ChannelsController: Тело запроса: {
+    "name": "JSON-4",
+    "state": "ACTIVE",
+    "command": "new",
+    "description": "3"
+}
+23 2025-12-10 15:48:02 [Trace] ASPA0011_1.Services.ChannelService: Начало создания канала с именем: JSON-4
+24 2025-12-10 15:48:02 [Debug] ASPA0011_1.Services.ChannelService: Создан канал JSON-4 с ID 38b5e9b8-37db-47c5-85a6-9f643c96bc41
+26 2025-12-10 15:48:02 [Information] ASPA0011_1.Services.ChannelService: Создан канал JSON-4 (38b5e9b8-37db-47c5-85a6-9f643c96bc41)
+29 2025-12-10 15:48:02 [Information] ASPA0011_1.Controllers.ChannelsController: Создан канал JSON-4 в состоянии ACTIVE
+32 2025-12-10 15:48:02 [Trace] ASPA0011_1.Controllers.ChannelsController: Завершение POST /api/channels
+33 2025-12-10 15:48:44 [Information] ASPA0011_1.Controllers.ChannelsController: Удалены каналы со состоянием CLOSED (0)
+36 2025-12-10 15:48:44 [Warning] ASPA0011_1.Controllers.ChannelsController: Каналы для удаления не найдены (state=CLOSED)
+40 2025-12-10 15:49:16 [Information] ASPA0011_1.Controllers.ChannelsController: Все каналы остановлены. Причина: Потому что захотел
+43 2025-12-10 15:49:48 [Information] ASPA0011_1.Controllers.ChannelsController: Все каналы возобновлены
+46 2025-12-10 15:50:25 [Trace] ASPA0011_1.Controllers.ChannelsController: Начало обработки GET /api/channels
+47 2025-12-10 15:50:25 [Debug] ASPA0011_1.Controllers.ChannelsController: Получено каналов: 1
+49 2025-12-10 15:50:25 [Trace] ASPA0011_1.Controllers.ChannelsController: Завершение GET /api/channels
+6 2025-12-10 23:56:54 [Trace] ASPA0011_1.Controllers.ChannelsController: Начало обработки GET /api/channels
+8 2025-12-10 23:56:54 [Trace] ASPA0011_1.Controllers.ChannelsController: Завершение GET /api/channels
+9 2025-12-10 23:57:41 [Trace] ASPA0011_1.Controllers.ChannelsController: Начало обработки POST /api/queue
+11 2025-12-10 23:57:41 [Trace] ASPA0011_1.Services.ChannelService: Начало Enqueue в канал 3f4c65c8-b0eb-40a9-a063-acb151597a37
+6 2025-12-11 08:06:33 [Trace] ASPA0011_1.Controllers.ChannelsController: Начало обработки GET /api/channels
+8 2025-12-11 08:06:33 [Trace] ASPA0011_1.Controllers.ChannelsController: Завершение GET /api/channels

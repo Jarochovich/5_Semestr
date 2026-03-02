@@ -1,0 +1,109 @@
+1 2025-11-27 09:24:00 [Information] Program: Приложение успешно запущено в среде: Development
+2 2025-11-27 09:24:00 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5096
+3 2025-11-27 09:24:00 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+4 2025-11-27 09:24:00 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+5 2025-11-27 09:24:00 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\5_СЕМЕСТР\Лабы\ТПВИ\ASPA0011_1\ASPA0011_1
+6 2025-11-27 09:24:38 [Information] ASPA0011_1.Services.ChannelService: Создан канал JSON-4 (263c8805-b150-49ab-b8a6-f3e6da986cd9)
+7 2025-11-27 09:24:38 [Information] ASPA0011_1.Controllers.ChannelsController: Создан канал JSON-4 в состоянии ACTIVE
+8 2025-11-27 09:27:33 [Information] ASPA0011_1.Services.ChannelService: Создан канал JSON-4 (adbee548-cafa-41e6-b38b-16f955765071)
+9 2025-11-27 09:27:33 [Information] ASPA0011_1.Controllers.ChannelsController: Создан канал JSON-4 в состоянии ACTIVE
+1 2025-12-10 15:38:44 [Information] Program: Приложение успешно запущено в среде: Development
+2 2025-12-10 15:38:44 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5096
+3 2025-12-10 15:38:44 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+4 2025-12-10 15:38:44 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+5 2025-12-10 15:38:44 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\5_СЕМЕСТР\Лабы\ТПВИ\ASPA0011_1\ASPA0011_1
+6 2025-12-10 15:39:45 [Information] ASPA0011_1.Services.ChannelService: Создан канал JSON-4 (4aedb808-4b5a-474e-9cc8-f8df5a5ef3bd)
+7 2025-12-10 15:39:45 [Information] ASPA0011_1.Controllers.ChannelsController: Создан канал JSON-4 в состоянии ACTIVE
+8 2025-12-10 15:39:55 [Error] ASPA0011_1.Controllers.ChannelsController: Канал 3610c6a4-118e-4338-9449-a6ab89a82c94 не найден для возобновления
+9 2025-12-10 15:40:46 [Error] ASPA0011_1.Services.ChannelService: Канал 38520b9e-c679-458f-aa56-dc673198b98e не найден для операции Peek
+10 2025-12-10 15:40:46 [Error] ASPA0011_1.Controllers.ChannelsController: Канал 38520b9e-c679-458f-aa56-dc673198b98e не найден для команды peek
+1 2025-12-10 15:41:54 [Information] Program: Приложение успешно запущено в среде: Development
+2 2025-12-10 15:41:54 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5096
+3 2025-12-10 15:41:54 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+4 2025-12-10 15:41:54 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+5 2025-12-10 15:41:54 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\5_СЕМЕСТР\Лабы\ТПВИ\ASPA0011_1\ASPA0011_1
+6 2025-12-10 15:42:05 [Debug] ASPA0011_1.Controllers.ChannelsController: Получено каналов: 0
+7 2025-12-10 15:42:08 [Debug] ASPA0011_1.Controllers.ChannelsController: Тело запроса: {
+    "name": "JSON-4",
+    "state": "ACTIVE",
+    "command": "new",
+    "description": "3"
+}
+8 2025-12-10 15:42:08 [Debug] ASPA0011_1.Services.ChannelService: Создан канал JSON-4 с ID 3d55c6d1-04c3-403b-a292-d228decd9482
+9 2025-12-10 15:42:08 [Information] ASPA0011_1.Services.ChannelService: Создан канал JSON-4 (3d55c6d1-04c3-403b-a292-d228decd9482)
+10 2025-12-10 15:42:08 [Information] ASPA0011_1.Controllers.ChannelsController: Создан канал JSON-4 в состоянии ACTIVE
+11 2025-12-10 15:42:09 [Debug] ASPA0011_1.Controllers.ChannelsController: Тело запроса: {
+    "name": "JSON-4",
+    "state": "ACTIVE",
+    "command": "new",
+    "description": "3"
+}
+12 2025-12-10 15:42:09 [Debug] ASPA0011_1.Services.ChannelService: Создан канал JSON-4 с ID 1d3fd181-cead-4a44-b258-1cafbdac80cf
+13 2025-12-10 15:42:09 [Information] ASPA0011_1.Services.ChannelService: Создан канал JSON-4 (1d3fd181-cead-4a44-b258-1cafbdac80cf)
+14 2025-12-10 15:42:09 [Information] ASPA0011_1.Controllers.ChannelsController: Создан канал JSON-4 в состоянии ACTIVE
+15 2025-12-10 15:42:10 [Debug] ASPA0011_1.Controllers.ChannelsController: Тело запроса: {
+    "name": "JSON-4",
+    "state": "ACTIVE",
+    "command": "new",
+    "description": "3"
+}
+16 2025-12-10 15:42:10 [Debug] ASPA0011_1.Services.ChannelService: Создан канал JSON-4 с ID 3f4c65c8-b0eb-40a9-a063-acb151597a37
+17 2025-12-10 15:42:10 [Information] ASPA0011_1.Services.ChannelService: Создан канал JSON-4 (3f4c65c8-b0eb-40a9-a063-acb151597a37)
+18 2025-12-10 15:42:10 [Information] ASPA0011_1.Controllers.ChannelsController: Создан канал JSON-4 в состоянии ACTIVE
+19 2025-12-10 15:42:26 [Debug] ASPA0011_1.Controllers.ChannelsController: Тело запроса queue: {
+    "id": "3f4c65c8-b0eb-40a9-a063-acb151597a37",
+    "command": "enqueue",
+    "data": "JSON-3"
+}
+20 2025-12-10 15:42:26 [Debug] ASPA0011_1.Services.ChannelService: Подготовка к записи в канал 3f4c65c8-b0eb-40a9-a063-acb151597a37: JSON-3
+21 2025-12-10 15:42:26 [Debug] ASPA0011_1.Services.ChannelService: Успешный Enqueue в канал 3f4c65c8-b0eb-40a9-a063-acb151597a37: JSON-3
+22 2025-12-10 15:42:26 [Debug] ASPA0011_1.Controllers.ChannelsController: Enqueue в канал 3f4c65c8-b0eb-40a9-a063-acb151597a37: JSON-3
+23 2025-12-10 15:42:27 [Debug] ASPA0011_1.Controllers.ChannelsController: Тело запроса queue: {
+    "id": "3f4c65c8-b0eb-40a9-a063-acb151597a37",
+    "command": "enqueue",
+    "data": "JSON-3"
+}
+24 2025-12-10 15:42:27 [Debug] ASPA0011_1.Services.ChannelService: Подготовка к записи в канал 3f4c65c8-b0eb-40a9-a063-acb151597a37: JSON-3
+25 2025-12-10 15:42:27 [Debug] ASPA0011_1.Services.ChannelService: Успешный Enqueue в канал 3f4c65c8-b0eb-40a9-a063-acb151597a37: JSON-3
+26 2025-12-10 15:42:27 [Debug] ASPA0011_1.Controllers.ChannelsController: Enqueue в канал 3f4c65c8-b0eb-40a9-a063-acb151597a37: JSON-3
+27 2025-12-10 15:42:28 [Debug] ASPA0011_1.Controllers.ChannelsController: Тело запроса queue: {
+    "id": "3f4c65c8-b0eb-40a9-a063-acb151597a37",
+    "command": "enqueue",
+    "data": "JSON-3"
+}
+28 2025-12-10 15:42:28 [Debug] ASPA0011_1.Services.ChannelService: Подготовка к записи в канал 3f4c65c8-b0eb-40a9-a063-acb151597a37: JSON-3
+29 2025-12-10 15:42:28 [Debug] ASPA0011_1.Services.ChannelService: Успешный Enqueue в канал 3f4c65c8-b0eb-40a9-a063-acb151597a37: JSON-3
+30 2025-12-10 15:42:28 [Debug] ASPA0011_1.Controllers.ChannelsController: Enqueue в канал 3f4c65c8-b0eb-40a9-a063-acb151597a37: JSON-3
+31 2025-12-10 15:42:30 [Debug] ASPA0011_1.Controllers.ChannelsController: Получено каналов: 3
+32 2025-12-10 15:43:09 [Debug] ASPA0011_1.Controllers.ChannelsController: Получено каналов: 3
+33 2025-12-10 15:43:23 [Information] ASPA0011_1.Controllers.ChannelsController: Удалены каналы со состоянием CLOSED (0)
+34 2025-12-10 15:43:23 [Warning] ASPA0011_1.Controllers.ChannelsController: Каналы для удаления не найдены (state=CLOSED)
+35 2025-12-10 15:43:49 [Information] ASPA0011_1.Controllers.ChannelsController: Все каналы возобновлены
+36 2025-12-10 15:43:54 [Information] ASPA0011_1.Controllers.ChannelsController: Все каналы возобновлены
+2 2025-12-10 15:45:47 [Information] ASPA0011_1.Program: Приложение успешно запущено в среде: Development
+5 2025-12-10 15:45:47 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5096
+8 2025-12-10 15:45:47 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+11 2025-12-10 15:45:47 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+14 2025-12-10 15:45:47 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\5_СЕМЕСТР\Лабы\ТПВИ\ASPA0011_1\ASPA0011_1
+18 2025-12-10 15:46:22 [Debug] ASPA0011_1.Controllers.ChannelsController: Получено каналов: 0
+22 2025-12-10 15:48:02 [Debug] ASPA0011_1.Controllers.ChannelsController: Тело запроса: {
+    "name": "JSON-4",
+    "state": "ACTIVE",
+    "command": "new",
+    "description": "3"
+}
+25 2025-12-10 15:48:02 [Debug] ASPA0011_1.Services.ChannelService: Создан канал JSON-4 с ID 38b5e9b8-37db-47c5-85a6-9f643c96bc41
+27 2025-12-10 15:48:02 [Information] ASPA0011_1.Services.ChannelService: Создан канал JSON-4 (38b5e9b8-37db-47c5-85a6-9f643c96bc41)
+30 2025-12-10 15:48:02 [Information] ASPA0011_1.Controllers.ChannelsController: Создан канал JSON-4 в состоянии ACTIVE
+34 2025-12-10 15:48:44 [Information] ASPA0011_1.Controllers.ChannelsController: Удалены каналы со состоянием CLOSED (0)
+37 2025-12-10 15:48:44 [Warning] ASPA0011_1.Controllers.ChannelsController: Каналы для удаления не найдены (state=CLOSED)
+41 2025-12-10 15:49:16 [Information] ASPA0011_1.Controllers.ChannelsController: Все каналы остановлены. Причина: Потому что захотел
+44 2025-12-10 15:49:48 [Information] ASPA0011_1.Controllers.ChannelsController: Все каналы возобновлены
+48 2025-12-10 15:50:25 [Debug] ASPA0011_1.Controllers.ChannelsController: Получено каналов: 1
+7 2025-12-10 23:56:54 [Debug] ASPA0011_1.Controllers.ChannelsController: Получено каналов: 0
+10 2025-12-10 23:57:41 [Debug] ASPA0011_1.Controllers.ChannelsController: Тело запроса queue: {
+    "id": "3f4c65c8-b0eb-40a9-a063-acb151597a37",
+    "command": "enqueue",
+    "data": "JSON-3"
+}
+7 2025-12-11 08:06:33 [Debug] ASPA0011_1.Controllers.ChannelsController: Получено каналов: 0

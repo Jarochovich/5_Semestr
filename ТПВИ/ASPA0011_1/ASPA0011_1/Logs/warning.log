@@ -1,0 +1,19 @@
+4 2025-11-27 08:25:01 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5096
+9 2025-11-27 08:25:01 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+14 2025-11-27 08:25:01 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+19 2025-11-27 08:25:01 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\5_СЕМЕСТР\Лабы\ТПВИ\ASPA0011_1\ASPA0011_1
+4 2025-11-27 08:26:36 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5096
+9 2025-11-27 08:26:36 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+14 2025-11-27 08:26:36 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+19 2025-11-27 08:26:36 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\5_СЕМЕСТР\Лабы\ТПВИ\ASPA0011_1\ASPA0011_1
+24 2025-11-27 08:26:57 [Information] ASPA0011_1.Controllers.ChannelsController: Удалены каналы со состоянием CLOSED (0)
+29 2025-11-27 08:26:57 [Warning] ASPA0011_1.Controllers.ChannelsController: Каналы для удаления не найдены (state=CLOSED)
+7 2025-11-27 08:36:30 [Warning] ASPA0011_1.Controllers.ChannelsController: Каналы для удаления не найдены (state=CLOSED)
+11 2025-11-27 08:42:34 [Warning] ASPA0011_1.Services.ChannelService: Попытка добавить сообщение в закрытый канал f81e0bba-6347-4e8e-812d-87f8099ad3ea
+12 2025-11-27 08:42:34 [Warning] ASPA0011_1.Controllers.ChannelsController: Попытка выполнить enqueue для закрытого канала f81e0bba-6347-4e8e-812d-87f8099ad3ea
+7 2025-11-27 08:44:17 [Warning] ASPA0011_1.Controllers.ChannelsController: Каналы для удаления не найдены (state=CLOSED)
+7 2025-11-27 08:52:40 [Warning] ASPA0011_1.Controllers.ChannelsController: Каналы для удаления не найдены (state=CLOSED)
+7 2025-11-27 09:00:36 [Warning] ASPA0011_1.Controllers.ChannelsController: Каналы для удаления не найдены (state=CLOSED)
+19 2025-11-27 09:04:20 [Warning] ASPA0011_1.Services.ChannelService: Попытка добавить сообщение в закрытый канал 111cef5f-8ac4-4c18-a02a-27f483307331
+20 2025-11-27 09:04:20 [Warning] ASPA0011_1.Controllers.ChannelsController: Попытка выполнить enqueue для закрытого канала 111cef5f-8ac4-4c18-a02a-27f483307331
+39 2025-12-10 15:48:44 [Warning] ASPA0011_1.Controllers.ChannelsController: Каналы для удаления не найдены (state=CLOSED)
